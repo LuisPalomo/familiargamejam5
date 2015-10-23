@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 428736}
   - 212: {fileID: 21272694}
   - 60: {fileID: 6026884}
+  - 114: {fileID: 11462698}
   m_Layer: 0
   m_Name: Clara07
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   - 4: {fileID: 471696}
   - 212: {fileID: 21289170}
   - 60: {fileID: 6017784}
+  - 114: {fileID: 11460898}
   m_Layer: 0
   m_Name: Clara05
   m_TagString: Untagged
@@ -44,6 +46,7 @@ GameObject:
   - 4: {fileID: 497642}
   - 212: {fileID: 21247728}
   - 60: {fileID: 6062238}
+  - 114: {fileID: 11406642}
   m_Layer: 0
   m_Name: Clara08
   m_TagString: Untagged
@@ -76,6 +79,7 @@ GameObject:
   - 4: {fileID: 490734}
   - 212: {fileID: 21256192}
   - 60: {fileID: 6050178}
+  - 114: {fileID: 11402506}
   m_Layer: 0
   m_Name: Clara01
   m_TagString: Untagged
@@ -93,6 +97,7 @@ GameObject:
   - 4: {fileID: 494774}
   - 212: {fileID: 21260772}
   - 60: {fileID: 6036578}
+  - 114: {fileID: 11438932}
   m_Layer: 0
   m_Name: Yema
   m_TagString: Untagged
@@ -110,6 +115,7 @@ GameObject:
   - 4: {fileID: 449338}
   - 212: {fileID: 21208826}
   - 60: {fileID: 6089076}
+  - 114: {fileID: 11437002}
   m_Layer: 0
   m_Name: Clara03
   m_TagString: Untagged
@@ -127,6 +133,7 @@ GameObject:
   - 4: {fileID: 456242}
   - 212: {fileID: 21280860}
   - 60: {fileID: 6073674}
+  - 114: {fileID: 11437456}
   m_Layer: 0
   m_Name: Clara02
   m_TagString: Untagged
@@ -144,6 +151,7 @@ GameObject:
   - 4: {fileID: 496462}
   - 212: {fileID: 21288780}
   - 60: {fileID: 6024256}
+  - 114: {fileID: 11448708}
   m_Layer: 0
   m_Name: Clara06
   m_TagString: Untagged
@@ -161,6 +169,7 @@ GameObject:
   - 4: {fileID: 455980}
   - 212: {fileID: 21219280}
   - 60: {fileID: 6012120}
+  - 114: {fileID: 11491750}
   m_Layer: 0
   m_Name: Clara04
   m_TagString: Untagged
@@ -178,6 +187,7 @@ GameObject:
   - 4: {fileID: 419258}
   - 212: {fileID: 21220032}
   - 60: {fileID: 6027036}
+  - 114: {fileID: 11496280}
   m_Layer: 0
   m_Name: Clara09
   m_TagString: Untagged
@@ -264,7 +274,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.76824594, y: .264548033, z: 0}
+  m_LocalPosition: {x: 4.52605104, y: .322631687, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490734}
@@ -739,6 +749,136 @@ PolygonCollider2D:
       - {x: -.150000006, y: -.264999986}
       - {x: .0700000003, y: -.135000005}
       - {x: .239999995, y: -.075000003}
+--- !u!114 &11402506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11406642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11437002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11437456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11438932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: yema
+  drag: 0
+--- !u!114 &11448708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11460898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11462698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11491750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
+--- !u!114 &11496280
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac0ffa1d76a80b46b172aaca82bb52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePiece: clara
+  drag: 0
 --- !u!212 &21208826
 SpriteRenderer:
   m_ObjectHideFlags: 1
