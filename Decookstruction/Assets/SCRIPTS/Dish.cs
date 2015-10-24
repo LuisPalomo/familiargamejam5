@@ -48,7 +48,9 @@ public class Dish : MonoBehaviour {
         else
         {
             initScore -= tFails * 50;
+            initScore = (initScore > 0) ? initScore : 0;
         }
+
 
         GameManager.Instance.AddScore(initScore);
     }

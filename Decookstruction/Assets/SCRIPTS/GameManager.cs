@@ -6,10 +6,6 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
 
-    public float timeT=180;
-
-    private int min,sec,mSec;
-
 	private int score;
 
     private bool buckOpen=false;
@@ -54,25 +50,6 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
     }
 
-
-    public float stopWatchF(float timeT)
-    {
-        timeT -= Time.deltaTime;
-
-        if (timeT>0)
-        {
-            min = (int)timeT / 60;
-
-            sec = (int)timeT % 60;
-
-            mSec = (int)(timeT * 100) % 100;
-
-            Debug.Log(min + " " + sec + " " + mSec);
-        }
-
-        return timeT;
-    }
-
     public void changeScene(string scene){
         Application.LoadLevel(scene);
     }
@@ -111,5 +88,6 @@ public class GameManager : MonoBehaviour {
 	public void AddScore(int newScore)
 	{
 		score += newScore;
-	}
+        UpdateScore();
+    }
 }

@@ -11,6 +11,13 @@ public class DishSpawner : MonoBehaviour {
 		
 	}
 	
+    void Update()
+    {
+        if(Input.GetButtonDown("Jump")){
+            NewDish();
+        }
+    }
+
 	void NewDish()
 	{
 		int randomInt = Random.Range(0, dishes.Length);
@@ -22,6 +29,7 @@ public class DishSpawner : MonoBehaviour {
 		{
 			dish.GetComponent<Dish>().CalculateScore();
 			Destroy(dish);
+
 			Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
 		}
 	}
