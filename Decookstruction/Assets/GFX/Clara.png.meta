@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 3e6140062136d3143818775127be4fd2
+timeCreated: 1445694037
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Clara_0
+    21300002: Clara_1
+    21300004: Clara_2
+    21300006: Clara_3
+    21300008: Clara_4
+    21300010: Clara_5
+    21300012: Clara_6
+    21300014: Clara_7
+    21300016: Clara_8
+    21300018: Clara_9
+    21300020: Clara_10
+    21300022: Clara_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Clara_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 328
+        width: 157
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 370
+        width: 166
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_2
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 380
+        width: 186
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 336
+        width: 176
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_4
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 355
+        width: 198
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 144
+        width: 184
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 153
+        width: 178
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_7
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 171
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_8
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 167
+        width: 142
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_9
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 195
+        width: 129
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_10
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 206
+        width: 110
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clara_11
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 98
+        width: 101
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
