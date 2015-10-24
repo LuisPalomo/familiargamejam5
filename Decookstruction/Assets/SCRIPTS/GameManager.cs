@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
+
+    public float timeWatch;
+
+    private float timeT,min,sec,mSec;
 
 	private int score;
 
     private bool buckOpen=false;
 
     private string buttonBucket;
+    public Text scor;
 
     private GameManager() { }
 
@@ -45,6 +51,27 @@ public class GameManager : MonoBehaviour {
 		
 		//Sets this to not be destroyed when reloading scene
 		DontDestroyOnLoad(gameObject);
+    }
+
+    void Update()
+    {
+        stopWatchF();
+    }
+
+    public void stopWatchF()
+    {
+        
+        timeT=Time.time;
+
+        Debug.Log(timeT);
+
+        min = timeT / 60;
+
+        sec = timeT % 60;
+
+        mSec = (timeT * 100) % 100;
+
+        Debug.Log(timeWatch);
     }
 
     public void changeScene(string scene){
