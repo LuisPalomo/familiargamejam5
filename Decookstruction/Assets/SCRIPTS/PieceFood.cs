@@ -9,6 +9,7 @@ public class PieceFood : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
+		namePiece = transform.parent.name;
 	
 	}
 	

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
-
     public float timeWatch;
 
     private float timeT,min,sec,mSec;
@@ -15,6 +14,7 @@ public class GameManager : MonoBehaviour {
     private bool buckOpen=false;
 
     private string buttonBucket;
+
     public Text scor;
 
     private GameManager() { }
@@ -102,4 +102,16 @@ public class GameManager : MonoBehaviour {
     {
         return buttonBucket;
     }
+
+	void UpdateScore()
+	{
+		GameObject scoreTextGO = GameObject.Find ("Score Text");
+		scoreTextGO.GetComponent<Text>().text = score + " $";
+	}
+
+	public void AddScore(int newScore)
+	{
+		score += newScore;
+		UpdateScore ();
+	}
 }
