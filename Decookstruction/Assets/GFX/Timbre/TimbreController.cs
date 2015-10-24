@@ -27,7 +27,7 @@ public class TimbreController : MonoBehaviour
         this.button.localScale = new Vector3(1.0f, buttonScale, 1.0f);
 	}
 
-    private void GenerateSound()
+    public void GenerateSound()
     {
         this.noteSystem.Emit(5);
         this.soundSystem.Emit(20);

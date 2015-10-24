@@ -3,6 +3,8 @@ using System.Collections;
 
 public class FoodBucket : MonoBehaviour {
 
+    public int nIngredient;
+
     public string kindPiece;
 
     public string button;
@@ -10,6 +12,10 @@ public class FoodBucket : MonoBehaviour {
     public bool random;
 
     string namePiece;
+
+    GameObject dishAsso;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +42,26 @@ public class FoodBucket : MonoBehaviour {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
 
+        if (GameObject.FindGameObjectWithTag("Dish")!=null && dishAsso==null)
+        {
+            dishAsso = GameObject.FindGameObjectWithTag("Dish");
+
+            switch (nIngredient)
+            {
+                case 1:
+                    kindPiece=dishAsso.GetComponent<Dish>().ingredient1.name;
+                    break;
+                case 2:
+                    kindPiece = dishAsso.GetComponent<Dish>().ingredient2.name;
+                    break;
+                case 3:
+                    kindPiece = dishAsso.GetComponent<Dish>().ingredient3.name;
+                    break;
+            }
+
+        }
+        
+
     }
 
    void OnCollisionEnter2D(Collision2D coll)
@@ -45,8 +71,19 @@ public class FoodBucket : MonoBehaviour {
         if (kindPiece.Equals(namePiece))
         {
             Destroy(coll.gameObject);
-			Debug.Log ("100 puntos!");
-			GameManager.Instance.AddScore(100);
+
+            switch (nIngredient)
+            {
+                case 1:
+                    dishAsso.GetComponent<Dish>().NfoodBucketScore11++;
+                    break;
+                case 2:
+                    dishAsso.GetComponent<Dish>().NfoodBucketScore21++;
+                    break;
+                case 3:
+                    dishAsso.GetComponent<Dish>().NfoodBucketScore31++;
+                    break;
+            }
         }
         else
         {

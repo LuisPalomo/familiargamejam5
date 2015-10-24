@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
-    public float timeWatch;
 
-    private float timeT,min,sec,mSec;
+    public float timeT=180;
+
+    private int min,sec,mSec;
 
 	private int score;
 
@@ -55,23 +56,31 @@ public class GameManager : MonoBehaviour {
 
     void Update()
     {
-        //stopWatchF();
+        if (Application.loadedLevelName.Equals("GameScene"))
+        {
+            if (Input.GetButtonDown("jump"))
+            {
+                UpdateScore();
+            }
+        }
     }
 
-    public void stopWatchF()
+    public float stopWatchF(float timeT)
     {
-        
-        timeT=Time.time;
+        timeT -= Time.deltaTime;
 
-        Debug.Log(timeT);
+        if (timeT>0)
+        {
+            min = (int)timeT / 60;
 
-        min = timeT / 60;
+            sec = (int)timeT % 60;
 
-        sec = timeT % 60;
+            mSec = (int)(timeT * 100) % 100;
 
-        mSec = (timeT * 100) % 100;
+            Debug.Log(min + " " + sec + " " + mSec);
+        }
 
-        Debug.Log(timeWatch);
+        return timeT;
     }
 
     public void changeScene(string scene){
@@ -112,6 +121,5 @@ public class GameManager : MonoBehaviour {
 	public void AddScore(int newScore)
 	{
 		score += newScore;
-		UpdateScore ();
 	}
 }
