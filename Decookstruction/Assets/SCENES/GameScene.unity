@@ -816,6 +816,8 @@ MonoBehaviour:
   button: w
   random: 0
   percentText: {fileID: 0}
+  drop: {fileID: 8300000, guid: fa65a138ac7b50f4dac4635dbd206751, type: 3}
+  dropError: {fileID: 8300000, guid: f3b901359b692b946a565a1ceb6e8a04, type: 3}
 --- !u!50 &1524082826
 Rigidbody2D:
   serializedVersion: 2
@@ -947,6 +949,8 @@ MonoBehaviour:
   button: q
   random: 0
   percentText: {fileID: 0}
+  drop: {fileID: 8300000, guid: fa65a138ac7b50f4dac4635dbd206751, type: 3}
+  dropError: {fileID: 8300000, guid: f3b901359b692b946a565a1ceb6e8a04, type: 3}
 --- !u!50 &1601437240
 Rigidbody2D:
   serializedVersion: 2
@@ -1078,6 +1082,8 @@ MonoBehaviour:
   button: e
   random: 0
   percentText: {fileID: 0}
+  drop: {fileID: 8300000, guid: fa65a138ac7b50f4dac4635dbd206751, type: 3}
+  dropError: {fileID: 8300000, guid: f3b901359b692b946a565a1ceb6e8a04, type: 3}
 --- !u!50 &1610049989
 Rigidbody2D:
   serializedVersion: 2
