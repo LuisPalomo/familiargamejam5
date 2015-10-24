@@ -12,7 +12,13 @@ public class GameManager : MonoBehaviour {
 
     private string buttonBucket;
 
-    public Text scor;
+	public AudioClip buttonSound;
+
+	public AudioClip exitSound;
+
+	public AudioClip musicSound;
+
+	public AudioClip cashSound;
 
     private GameManager() { }
 
@@ -51,11 +57,14 @@ public class GameManager : MonoBehaviour {
     }
 
     public void changeScene(string scene){
+		SoundManager.instance.PlaySingle (buttonSound);
+		SoundManager.instance.StopMusic ();
         Application.LoadLevel(scene);
     }
 
     public void quitGame()
     {
+		SoundManager.instance.PlaySingle (exitSound);
         Application.Quit();
     }
 
@@ -87,6 +96,13 @@ public class GameManager : MonoBehaviour {
 
 	public void AddScore(int newScore)
 	{
+		if (newScore > 0) {
+			SoundManager.instance.PlaySingleDelay(cashSound, 0.5F);
+		} 
+		else 
+		{
+			SoundManager.instance.PlaySingleDelay (exitSound, 0.5F);
+		}
 		score += newScore;
         UpdateScore();
     }

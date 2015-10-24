@@ -51,7 +51,6 @@ public class Dish : MonoBehaviour {
            // initScore = (initScore > 0) ? initScore : 0;
         }
 
-
         GameManager.Instance.AddScore(initScore);
     }
 

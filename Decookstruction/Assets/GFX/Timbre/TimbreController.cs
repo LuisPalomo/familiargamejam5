@@ -11,6 +11,8 @@ public class TimbreController : MonoBehaviour
 
     private float timeCounter = 0.0f;
 
+	public AudioSource bellSound;
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.C))
@@ -29,6 +31,8 @@ public class TimbreController : MonoBehaviour
 
     public void GenerateSound()
     {
+		bellSound.Play ();
+
         this.noteSystem.Emit(5);
         this.soundSystem.Emit(20);
 
