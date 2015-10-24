@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class FoodBucket : MonoBehaviour {
 
@@ -11,11 +12,13 @@ public class FoodBucket : MonoBehaviour {
 
     public bool random;
 
+    public Text percentText;
+
     string namePiece;
 
     GameObject dishAsso;
 
-
+    
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +32,7 @@ public class FoodBucket : MonoBehaviour {
 
             if (GameManager.Instance.getBuckOpen() == false)
             {
+                GetComponent<TaperControl>().OpenTaper();
                 Debug.Log("Abierto");
                 gameObject.GetComponent<BoxCollider2D>().enabled = true;
                 GameManager.Instance.setBuckOpen(true);
@@ -38,6 +42,7 @@ public class FoodBucket : MonoBehaviour {
         }
         if (Input.GetKeyUp(button) && GameManager.Instance.getBuckOpen() == true && GameManager.Instance.getButtonBuck().Equals(button))
         {
+            GetComponent<TaperControl>().CloseTaper();
             GameManager.Instance.setBuckOpen(false);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }

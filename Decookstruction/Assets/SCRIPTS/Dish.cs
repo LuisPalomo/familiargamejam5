@@ -47,12 +47,39 @@ public class Dish : MonoBehaviour {
         }
         else
         {
-            initScore -= tFails * 50;
-            initScore = (initScore > 0) ? initScore : 0;
+            initScore -= tFails * 80;
+           // initScore = (initScore > 0) ? initScore : 0;
         }
 
 
         GameManager.Instance.AddScore(initScore);
+    }
+
+    public int perFood1()
+    {
+        int t= ingredient1.GetComponent<Ingredient>().numPieces;
+
+        t=(t * foodBucketScore1) / 100;
+
+        return t;
+    }
+
+    public int perFood2()
+    {
+        int t = ingredient2.GetComponent<Ingredient>().numPieces;
+
+        t = (t * foodBucketScore2) / 100;
+
+        return t;
+    }
+
+    public int perFood3()
+    {
+        int t = ingredient3.GetComponent<Ingredient>().numPieces;
+
+        t = (t * foodBucketScore3) / 100;
+
+        return t;
     }
 
     public int NfoodBucketScore11

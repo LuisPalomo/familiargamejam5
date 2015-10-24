@@ -14,6 +14,7 @@ public class DishSpawner : MonoBehaviour {
     void Update()
     {
         if(Input.GetButtonDown("Jump")){
+            GameObject.Find("Timbre").GetComponent<TimbreController>().GenerateSound();
             NewDish();
         }
     }
@@ -22,15 +23,16 @@ public class DishSpawner : MonoBehaviour {
 	{
 		int randomInt = Random.Range(0, dishes.Length);
 		GameObject dish = GameObject.FindGameObjectWithTag ("Dish");
+        GameObject nDish;
 		if ( dish == null) 
 		{
-			Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
+            nDish = (GameObject)Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
 		}else
 		{
 			dish.GetComponent<Dish>().CalculateScore();
 			Destroy(dish);
 
-			Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
+			nDish = (GameObject) Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
 		}
 	}
 }
