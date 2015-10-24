@@ -54,16 +54,6 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
     }
 
-    void Update()
-    {
-        if (Application.loadedLevelName.Equals("GameScene"))
-        {
-            if (Input.GetButtonDown("jump"))
-            {
-                UpdateScore();
-            }
-        }
-    }
 
     public float stopWatchF(float timeT)
     {

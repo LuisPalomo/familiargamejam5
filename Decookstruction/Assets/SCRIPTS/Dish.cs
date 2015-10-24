@@ -33,7 +33,7 @@ public class Dish : MonoBehaviour {
 	 
 	}
 
-    void CalculateScore()
+    public void CalculateScore()
     {
         foodBucketScore1 = Mathf.Abs (FoodBucketScore1 - this.NfoodBucketScore1);
         foodBucketScore2 = Mathf.Abs(FoodBucketScore2 - this.NfoodBucketScore2);

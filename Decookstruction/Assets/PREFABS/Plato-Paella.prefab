@@ -143,7 +143,7 @@ GameObject:
   - 4: {fileID: 471408}
   - 212: {fileID: 21202062}
   - 114: {fileID: 11481358}
-  - 95: {fileID: 9584622}
+  - 95: {fileID: 9550802}
   m_Layer: 0
   m_Name: Plato-Paella
   m_TagString: Dish
@@ -4215,7 +4215,7 @@ PolygonCollider2D:
       - {x: 1.62, y: -1.57000005}
       - {x: 1.70000005, y: -1.42999995}
       - {x: 1.91999996, y: -.920000017}
---- !u!95 &9584622
+--- !u!95 &9550802
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
