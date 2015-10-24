@@ -5,7 +5,7 @@ Font:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: asset 3
+  m_Name: FuenteTech-36px
   serializedVersion: 4
   m_AsciiStartOffset: 0
   m_Kerning: 1
@@ -13,7 +13,7 @@ Font:
   m_CharacterSpacing: 1
   m_CharacterPadding: 0
   m_ConvertCase: 0
-  m_DefaultMaterial: {fileID: 2100000, guid: 64feab74aeab5c642963d8eddb0a867b, type: 2}
+  m_DefaultMaterial: {fileID: 2100000, guid: aadd8860268b9e047b0a033cafd88e0b, type: 2}
   m_CharacterRects:
   - serializedVersion: 2
     index: 33
