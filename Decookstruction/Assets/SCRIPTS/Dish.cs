@@ -12,11 +12,11 @@ public class Dish : MonoBehaviour {
 	private int foodBucketScore2;
 	private int foodBucketScore3;
 
-    private int NfoodBucketScore1;
-    private int NfoodBucketScore2;
-    private int NfoodBucketScore3;
+    private int NfoodBucketScore1=0;
+    private int NfoodBucketScore2=0;
+    private int NfoodBucketScore3=0;
 
-   
+    private int initScore=1000;
 
 
     // Use this for initialization
@@ -35,7 +35,22 @@ public class Dish : MonoBehaviour {
 
     void CalculateScore()
     {
+        foodBucketScore1 = Mathf.Abs (FoodBucketScore1 - this.NfoodBucketScore1);
+        foodBucketScore2 = Mathf.Abs(FoodBucketScore2 - this.NfoodBucketScore2);
+        foodBucketScore3 = Mathf.Abs(FoodBucketScore3 - this.NfoodBucketScore3);
 
+        int tFails = foodBucketScore1 + foodBucketScore2 + foodBucketScore3;
+
+        if (tFails==0)
+        {
+            initScore=initScore * 2;
+        }
+        else
+        {
+            initScore -= tFails * 50;
+        }
+
+        GameManager.Instance.AddScore(initScore);
     }
 
     public int NfoodBucketScore11
