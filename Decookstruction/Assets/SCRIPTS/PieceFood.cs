@@ -14,14 +14,22 @@ public class PieceFood : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+    
 	}
 
     void OnMouseDrag()
     {
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 21f));
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
     
+    void OnMouseUp()
+    {
+        Vector2 MouseV= new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        Debug.Log(MouseV);
+        GetComponent<Rigidbody2D>().AddForce(MouseV*5,ForceMode2D.Impulse);
+    }
+
     public string getNamePiece(){
         return namePiece;
     }

@@ -47,6 +47,15 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
     }
 
+    public void changeScene(string scene){
+        Application.LoadLevel(scene);
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
+
     public void setBuckOpen(bool buck)
     {
         this.buckOpen = buck;
