@@ -6,9 +6,7 @@ public class PieceFood : MonoBehaviour {
     public string namePiece;
 
     public bool drag;
-
-
-
+    
 	// Use this for initialization
 	void Start () {
 	
