@@ -45,6 +45,8 @@ public class FoodBucket : MonoBehaviour {
         if (kindPiece.Equals(namePiece))
         {
             Destroy(coll.gameObject);
+			Debug.Log ("100 puntos!");
+			GameManager.Instance.AddScore(100);
         }
         else
         {

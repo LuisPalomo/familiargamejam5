@@ -145,7 +145,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.82931995
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -166,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 4205798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.3100004, y: -4.96000004, z: -27.7299995}
+  m_LocalPosition: {x: -12, y: -5, z: -28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -196,7 +196,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33009407}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -326,6 +326,60 @@ PolygonCollider2D:
       - {x: -2.16000009, y: .349999994}
       - {x: -1.80999994, y: .439999998}
       - {x: -1.60000002, y: .529999971}
+--- !u!1 &92846814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 92846816}
+  - 212: {fileID: 92846815}
+  m_Layer: 0
+  m_Name: Escenario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &92846815
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 92846814}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1366716191
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0cd15659c6942f7429c370befe911c2f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &92846816
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 92846814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12, y: -5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &140483334 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100346, guid: c5994371538be3941a781527bd32a44d, type: 2}
@@ -351,7 +405,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 140483334}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -580,7 +634,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289158187}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -735,7 +789,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 299094429}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -981,7 +1035,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495724604}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -1161,6 +1215,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7aecc8c1525fa76439c8e32d5df9b8eb, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &654729825
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 471.152405
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 208.216537
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 425088, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &738001773
 Prefab:
   m_ObjectHideFlags: 0
@@ -1236,7 +1332,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 837450677}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -1391,7 +1487,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899065757}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -1546,7 +1642,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931115485}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -1811,7 +1907,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 953916356}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -2046,7 +2142,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1267633647}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -2289,7 +2385,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1446936072}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -2444,7 +2540,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510897849}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -2599,7 +2695,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554025532}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -2754,7 +2850,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1570742167}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -3418,7 +3514,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723780}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -3447,7 +3543,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723783}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -3692,7 +3788,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723784}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -3937,7 +4033,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723778}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -3966,7 +4062,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723786}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -3995,7 +4091,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723792}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4024,7 +4120,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723789}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4269,7 +4365,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723790}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4298,7 +4394,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723785}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4327,7 +4423,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723781}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4356,7 +4452,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723788}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4385,7 +4481,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723782}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4414,7 +4510,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723791}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0
@@ -4443,7 +4539,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833723777}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_IsKinematic: 0

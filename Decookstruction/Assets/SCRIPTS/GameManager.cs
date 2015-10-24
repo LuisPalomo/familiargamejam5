@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour {
 
     void Update()
     {
-        stopWatchF();
+        //stopWatchF();
     }
 
     public void stopWatchF()
