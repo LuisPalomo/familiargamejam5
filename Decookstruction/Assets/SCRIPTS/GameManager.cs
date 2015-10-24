@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance = null;
 
-	private int score;
-
     private bool buckOpen=false;
 
     private string buttonBucket;
+
+	private int score;
 
     private GameManager() { }
 
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour {
             if (instance == null)
             {
                 DontDestroyOnLoad(instance);
-                instance = new GameManager();
+                instance = this;
             }
 
             return instance;
@@ -75,4 +76,16 @@ public class GameManager : MonoBehaviour {
     {
         return buttonBucket;
     }
+
+	void UpdateScore()
+	{
+		GameObject scoreTextGO = GameObject.Find ("Score Text");
+		scoreTextGO.GetComponent<Text>().text = score + " $";
+	}
+
+	public void AddScore(int newScore)
+	{
+		score += newScore;
+		UpdateScore ();
+	}
 }
