@@ -34,6 +34,8 @@ public class StopWatch : MonoBehaviour {
 
             mSec = (int)(timeTe * 100) % 100;
 
+            Debug.Log(min + " : " + sec + " : " + mSec);
+
         }
 
         stopWatchText.text= min + " : " + sec + " : " + mSec;
