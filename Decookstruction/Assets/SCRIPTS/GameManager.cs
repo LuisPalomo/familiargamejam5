@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 
     private bool buckOpen=false;
 
+    private bool block=false;
+
     private string buttonBucket;
 
 	public AudioClip buttonSound;
@@ -36,7 +38,9 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-	//Awake is always called before any Start functions
+   
+
+    //Awake is always called before any Start functions
     void Awake()
     {
         Debug.Log("Inicia");
@@ -74,6 +78,10 @@ public class GameManager : MonoBehaviour {
 
     public void changeScene(string scene)
     {
+        Debug.Log("CambioScena");
+        instance.Block = false;
+        instance.score = 0;
+        Debug.Log("Nuevo Score: " + score);
 		SoundManager.instance.PlaySingle (buttonSound);
         Application.LoadLevel(scene);
     }
@@ -90,7 +98,7 @@ public class GameManager : MonoBehaviour {
         this.SetGuiItemsEnabled("Credits", true);
     }
     
-    private void SetGuiItemsEnabled(string tag, bool enabledState)
+    public void SetGuiItemsEnabled(string tag, bool enabledState)
     {
         GameObject[] howToCosas = Resources.FindObjectsOfTypeAll<GameObject>();
         foreach (GameObject howToItem in howToCosas)
@@ -142,7 +150,20 @@ public class GameManager : MonoBehaviour {
         return buttonBucket;
     }
 
-	void UpdateScore()
+    public bool Block
+    {
+        get
+        {
+            return block;
+        }
+
+        set
+        {
+            block = value;
+        }
+    }
+
+    void UpdateScore()
 	{
 		GameObject scoreTextGO = GameObject.Find ("Score Text");
 		scoreTextGO.GetComponent<Text>().text = score + " $";
@@ -158,8 +179,18 @@ public class GameManager : MonoBehaviour {
 		{
 			SoundManager.instance.PlaySingleDelay (exitSound, 0.5F);
 		}
-		score += newScore;
+        Debug.Log("Score " + score);
+        Debug.Log("NewScore " + newScore);
+        score += newScore;
+        Debug.Log("ScoreFinal " + score);
         UpdateScore();
     }
+
+    public void UpdateTotalScore()
+    {
+        GameObject scoreTextGO = GameObject.Find("Score");
+        scoreTextGO.GetComponent<Text>().text = score + " $";
+    }
+
 
 }

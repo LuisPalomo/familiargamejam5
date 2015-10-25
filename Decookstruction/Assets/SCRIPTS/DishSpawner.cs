@@ -16,7 +16,7 @@ public class DishSpawner : MonoBehaviour {
 	
     void Update()
     {
-        if(Input.GetButtonDown("Jump")){
+        if(Input.GetButtonDown("Jump") && GameManager.instance.Block == false){
 
             GameObject.Find("Timbre").GetComponent<TimbreController>().GenerateSound();
 

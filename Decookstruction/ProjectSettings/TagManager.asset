@@ -9,6 +9,7 @@ TagManager:
   - Instructions
   - QuitButton
   - Credits
+  - EndGame
   layers:
   - Default
   - TransparentFX

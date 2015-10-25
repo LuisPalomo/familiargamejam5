@@ -54,7 +54,20 @@ public class StopWatch : MonoBehaviour {
 			}
 		}
 
+        if (sec == 1)
+        {
+
+            Invoke("blockGame",2f);
+
+        }
         //stopWatchText.text= min + " : " + sec + " : " + mSec;
 		stopWatchText.text = sec.ToString();
+    }
+
+    private void blockGame()
+    {
+        GameManager.Instance.Block = true;
+        GameManager.Instance.SetGuiItemsEnabled("EndGame",true);
+        GameManager.Instance.UpdateTotalScore();
     }
 }
