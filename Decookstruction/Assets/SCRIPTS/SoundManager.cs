@@ -4,7 +4,8 @@ using System.Collections;
 public class SoundManager : MonoBehaviour {
 
 	public AudioSource efxSource;                   //Drag a reference to the audio source which will play the sound effects.
-	public AudioSource musicSource;                 //Drag a reference to the audio source which will play the music.
+	public AudioSource musicMenu;                 //Drag a reference to the audio source which will play the music.
+	public AudioSource musicGame;
 	public static SoundManager instance = null;     //Allows other scripts to call functions from SoundManager.             
 	
 	
@@ -40,14 +41,23 @@ public class SoundManager : MonoBehaviour {
 		efxSource.PlayDelayed(delay);
 	}
 
-	public void ChangeMusic(AudioClip clip)
+	public void PlayMusicMenu()
 	{
-		musicSource.clip = clip;
-		musicSource.Play ();
+		musicMenu.Play ();
 	}
 
-	public void StopMusic()
+	public void StopMusicMenu()
 	{
-		musicSource.Stop ();
+		musicMenu.Stop ();
+	}
+
+	public void PlayMusicGame()
+	{
+		musicGame.PlayDelayed(3F);
+	}
+	
+	public void StopMusicGame()
+	{
+		musicGame.Stop ();
 	}
 }

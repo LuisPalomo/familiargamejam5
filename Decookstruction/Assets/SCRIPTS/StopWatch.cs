@@ -11,6 +11,12 @@ public class StopWatch : MonoBehaviour {
 
     private int min, sec, mSec;
 
+	public Color alertColor;
+
+	public AudioSource lastSeconds;
+
+	private Boolean lastSecondsPlayed = false;
+
     // Use this for initialization
     void Start () {
 	
@@ -34,10 +40,21 @@ public class StopWatch : MonoBehaviour {
 
             mSec = (int)(timeTe * 100) % 100;
 
-            Debug.Log(min + " : " + sec + " : " + mSec);
+            //Debug.Log(min + " : " + sec + " : " + mSec);
 
         }
 
-        stopWatchText.text= min + " : " + sec + " : " + mSec;
+		if (sec == 5) 
+		{
+			stopWatchText.color = alertColor;
+			if(!lastSecondsPlayed)
+			{
+				lastSeconds.Play();
+				lastSecondsPlayed = true;
+			}
+		}
+
+        //stopWatchText.text= min + " : " + sec + " : " + mSec;
+		stopWatchText.text = sec.ToString();
     }
 }

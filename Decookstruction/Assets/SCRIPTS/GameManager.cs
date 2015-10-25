@@ -58,7 +58,8 @@ public class GameManager : MonoBehaviour {
 
     public void changeScene(string scene){
 		SoundManager.instance.PlaySingle (buttonSound);
-		SoundManager.instance.StopMusic ();
+		SoundManager.instance.StopMusicMenu ();
+		SoundManager.instance.StopMusicGame ();
         Application.LoadLevel(scene);
     }
 
