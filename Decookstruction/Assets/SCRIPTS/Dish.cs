@@ -24,9 +24,9 @@ public class Dish : MonoBehaviour {
     void Start () {
 
 		// Initialize the score for each bucket
-		FoodBucketScore1 = Random.Range (1, ingredient1.numPieces-1);
-		FoodBucketScore2 = Random.Range (1, ingredient2.numPieces-1);
-		FoodBucketScore3 = Random.Range (1, ingredient3.numPieces-1);
+		FoodBucketScore1 = Random.Range (1, ingredient1.numPieces+1);
+		FoodBucketScore2 = Random.Range (1, ingredient2.numPieces+1);
+		FoodBucketScore3 = Random.Range (1, ingredient3.numPieces+1);
 	}
 	
 	// Update is called once per frame

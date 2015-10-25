@@ -12,7 +12,7 @@ public class FoodBucket : MonoBehaviour {
 
     public bool random;
 
-    public Text percentText;
+    public BalloonController balloon;
 
 	public AudioClip drop;
 
@@ -21,6 +21,8 @@ public class FoodBucket : MonoBehaviour {
     string namePiece;
 
     GameObject dishAsso;
+
+	public Sprite[] arraySprites;
 
     
 
@@ -59,15 +61,33 @@ public class FoodBucket : MonoBehaviour {
             {
                 case 1:
                     kindPiece=dishAsso.GetComponent<Dish>().ingredient1.name;
-                    percentText.text = dishAsso.GetComponent<Dish>().perFood1()+" %";
+                    balloon.SetIngredientPercentage(dishAsso.GetComponent<Dish>().perFood1());
+					if(kindPiece == "Arroces"){
+						balloon.SetIngredientSprite(arraySprites[0]);
+					}
+					if(kindPiece == "Claras"){
+						balloon.SetIngredientSprite(arraySprites[1]);
+					}
                     break;
                 case 2:
                     kindPiece = dishAsso.GetComponent<Dish>().ingredient2.name;
-                    percentText.text = dishAsso.GetComponent<Dish>().perFood2() + " %";
+					balloon.SetIngredientPercentage(dishAsso.GetComponent<Dish>().perFood2());
+					if(kindPiece == "Guisantes"){
+						balloon.SetIngredientSprite(arraySprites[0]);
+					}
+					if(kindPiece == "Yemas"){
+						balloon.SetIngredientSprite(arraySprites[1]);
+					}
                     break;
                 case 3:
                     kindPiece = dishAsso.GetComponent<Dish>().ingredient3.name;
-                    percentText.text = dishAsso.GetComponent<Dish>().perFood3() + " %";
+					balloon.SetIngredientPercentage(dishAsso.GetComponent<Dish>().perFood3());
+					if(kindPiece == "Gambas"){
+						balloon.SetIngredientSprite(arraySprites[0]);
+					}
+					if(kindPiece == "Patatas"){
+						balloon.SetIngredientSprite(arraySprites[1]);
+					}
                     break;
             }
 

@@ -4,28 +4,31 @@ using UnityEngine.UI;
 
 public class BalloonController : MonoBehaviour
 {
-    private Image ingredientImage;
-    private Text ingredientPercentage;
+    public Image ingredientImage;
+    public Text ingredientPercentage;
 
-    private void Awake()
-    {
-        Transform ingredientImageTransform = this.transform.Find("IngredientImage");
-        if (ingredientImageTransform != null)
-        {
-            this.ingredientImage = ingredientImageTransform.GetComponent<Image>();
-        }
+	public int num;
+	public float globalScale = 1.0f;
 
-        Transform ingredientPercentageTransform = this.transform.Find("IngredientPercentage");
-        if (ingredientPercentageTransform != null)
-        {
-            this.ingredientPercentage = ingredientImageTransform.GetComponent<Text>();
-        }
-    }
+//    private void Start()
+//    {
+//        Transform ingredientImageTransform = this.transform.Find("IngredientImage");
+//        if (ingredientImageTransform != null)
+//        {
+//            this.ingredientImage = ingredientImageTransform.GetComponent<Image>();
+//        }
+//
+//		Transform ingredientPercentageTransform = this.transform.Find("IngredientPercentage");
+//        if (ingredientPercentageTransform != null)
+//        {
+//            this.ingredientPercentage = ingredientImageTransform.GetComponent<Text>();
+//        }
+//    }
     
     private void Update()
     {
         this.transform.localRotation = Quaternion.AngleAxis(Mathf.Sin(Time.time) * 1.0f, Vector3.forward);
-        this.transform.localScale = new Vector3(1.0f + (Mathf.Sin(Time.time * 4.0f) * 0.01f), 1.0f + (Mathf.Sin(Time.time * 6.0f) * 0.01f), 1.0f);
+		this.transform.localScale = new Vector3(1.0f + (Mathf.Sin(Time.time * 4.0f) * 0.01f), 1.0f + (Mathf.Sin(Time.time * 6.0f) * 0.01f), 1.0f) * this.globalScale;
     }
 
     public void SetIngredientSprite(Sprite sprite)

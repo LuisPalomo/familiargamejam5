@@ -5,6 +5,8 @@ public class DishSpawner : MonoBehaviour {
 
 	public GameObject[] dishes;
 
+	private float timeToNewDish;
+
 	// Use this for initialization
 	void Start () {
 		SoundManager.instance.PlayMusicGame ();
@@ -17,7 +19,12 @@ public class DishSpawner : MonoBehaviour {
         if(Input.GetButtonDown("Jump")){
 
             GameObject.Find("Timbre").GetComponent<TimbreController>().GenerateSound();
-            NewDish();
+
+			if(Time.time > timeToNewDish)
+			{
+            	NewDish();
+				timeToNewDish = Time.time + 2;
+			}
         }
     }
 
