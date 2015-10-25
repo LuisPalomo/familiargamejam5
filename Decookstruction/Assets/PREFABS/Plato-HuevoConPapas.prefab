@@ -520,6 +520,7 @@ GameObject:
   - 4: {fileID: 438736}
   - 212: {fileID: 21253844}
   - 114: {fileID: 11425964}
+  - 95: {fileID: 9594750}
   m_Layer: 0
   m_Name: Plato-HuevoConPapas
   m_TagString: Dish
@@ -1105,7 +1106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.27999973, y: -2.43000007, z: 0}
+  m_LocalPosition: {x: -11.4700003, y: -6.44999981, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407572}
@@ -1216,7 +1217,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.90851402, y: 1.11877334, z: 0}
+  m_LocalPosition: {x: 8.03666973, y: 1.03999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 454784}
@@ -4035,6 +4036,23 @@ PolygonCollider2D:
       - {x: .495000005, y: -.465000004}
       - {x: .644999981, y: -.135000005}
       - {x: .644999981, y: .104999997}
+--- !u!95 &9594750
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4712a79698252a44982f8b571c56d470, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11403882
 MonoBehaviour:
   m_ObjectHideFlags: 1

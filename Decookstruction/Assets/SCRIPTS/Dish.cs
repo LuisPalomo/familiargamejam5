@@ -19,6 +19,7 @@ public class Dish : MonoBehaviour {
     private int initScore=1000;
 
 
+
     // Use this for initialization
     void Start () {
 
@@ -58,7 +59,7 @@ public class Dish : MonoBehaviour {
     {
         int t= ingredient1.GetComponent<Ingredient>().numPieces;
 
-        t=(t * foodBucketScore1) / 100;
+        t=(100 * foodBucketScore1) / t;
 
         return t;
     }
@@ -67,7 +68,7 @@ public class Dish : MonoBehaviour {
     {
         int t = ingredient2.GetComponent<Ingredient>().numPieces;
 
-        t = (t * foodBucketScore2) / 100;
+        t = (100 * foodBucketScore2) / t;
 
         return t;
     }
@@ -76,7 +77,7 @@ public class Dish : MonoBehaviour {
     {
         int t = ingredient3.GetComponent<Ingredient>().numPieces;
 
-        t = (t * foodBucketScore3) / 100;
+        t = (100 * foodBucketScore3) / t;
 
         return t;
     }

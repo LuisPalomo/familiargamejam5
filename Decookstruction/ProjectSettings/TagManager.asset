@@ -46,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackFont
+    uniqueID: 2855416367
+    locked: 0
   - name: Front
     uniqueID: 3485900079
     locked: 0

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class DishSpawner : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class DishSpawner : MonoBehaviour {
     void Update()
     {
         if(Input.GetButtonDown("Jump")){
+
             GameObject.Find("Timbre").GetComponent<TimbreController>().GenerateSound();
             NewDish();
         }
@@ -30,8 +32,10 @@ public class DishSpawner : MonoBehaviour {
 		}else
 		{
 			dish.GetComponent<Dish>().CalculateScore();
-			Destroy(dish);
-
+            dish.GetComponent<Animator>().Play("Destroy");
+            //yield WaitForSeconds (dish.GetComponent<Animator>().GetAnimatorTransitionInfo());
+            Destroy(dish);
+			
 			nDish = (GameObject) Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
 		}
 	}
