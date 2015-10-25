@@ -81,7 +81,7 @@ public class FoodBucket : MonoBehaviour {
 					if(kindPiece == "Yemas"){
 						balloon.SetIngredientSprite(arraySprites[1]);
 					}
-					if(kindPiece == "Lechugas"){
+					if(kindPiece == "Lechuga"){
 						balloon.SetIngredientSprite(arraySprites[2]);
 					}
                     break;

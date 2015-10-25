@@ -615,6 +615,7 @@ MonoBehaviour:
   dishes:
   - {fileID: 150614, guid: deaba560d17ce934f9e515fad1aa4a28, type: 2}
   - {fileID: 118234, guid: c5994371538be3941a781527bd32a44d, type: 2}
+  - {fileID: 152058, guid: 14dd70765695af547b78f9e4e5db8c67, type: 2}
 --- !u!4 &412553496
 Transform:
   m_ObjectHideFlags: 0
@@ -1631,6 +1632,7 @@ MonoBehaviour:
   arraySprites:
   - {fileID: 21300000, guid: c340d097b812d9543996fddcb18b7e66, type: 3}
   - {fileID: 21300000, guid: 0378ea1beb90b934f82530276aaeae11, type: 3}
+  - {fileID: 21300000, guid: d986c3ed46a916d42af69c68bf65ca99, type: 3}
 --- !u!50 &1524082826
 Rigidbody2D:
   serializedVersion: 2
@@ -1894,6 +1896,7 @@ MonoBehaviour:
   arraySprites:
   - {fileID: 21300000, guid: a339802503f62af4f85c91c4523f9f11, type: 3}
   - {fileID: 21300000, guid: d39968b3dd910d14c93e39806e3c0f16, type: 3}
+  - {fileID: 21300000, guid: 90627810861f9e345885fd94a834be5b, type: 3}
 --- !u!50 &1601437240
 Rigidbody2D:
   serializedVersion: 2
