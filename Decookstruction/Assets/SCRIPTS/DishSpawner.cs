@@ -7,7 +7,7 @@ public class DishSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Invoke ("NewDish", 3);
+		NewDish();
 		
 	}
 	
