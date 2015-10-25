@@ -68,6 +68,9 @@ public class FoodBucket : MonoBehaviour {
 					if(kindPiece == "Claras"){
 						balloon.SetIngredientSprite(arraySprites[1]);
 					}
+					if(kindPiece == "Albondigas"){
+						balloon.SetIngredientSprite(arraySprites[2]);
+					}
                     break;
                 case 2:
                     kindPiece = dishAsso.GetComponent<Dish>().ingredient2.name;
@@ -77,6 +80,9 @@ public class FoodBucket : MonoBehaviour {
 					}
 					if(kindPiece == "Yemas"){
 						balloon.SetIngredientSprite(arraySprites[1]);
+					}
+					if(kindPiece == "Lechugas"){
+						balloon.SetIngredientSprite(arraySprites[2]);
 					}
                     break;
                 case 3:
