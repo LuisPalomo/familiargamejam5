@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Text: "A videogame by Gateway Games. 25 October 2015.\n\nConcept Artist, 2D Graphics\nLuis
     Miguel Gallego G\xF3mez\nlmgginspace@gmail.com\nlmgginspace.deviantart.com\n\nGame
     design, Programming, Testing\nSamuel Moreno Luque\nmnemosineii@gmail.com\n@Mnemosine_Z\n\nLuis
-    Palomo ...\nLuispalomosiv@gmail.com\n\nMusic, Sounds\n"
+    Manuel Palomo Sivianes\nLuispalomosiv@gmail.com\n@luispalomo\n\nMusic, Sounds\n"
 --- !u!222 &224823414
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -684,7 +684,7 @@ GameObject:
   - 114: {fileID: 751858133}
   m_Layer: 5
   m_Name: Instrucciones
-  m_TagString: InstructionsCanvas
+  m_TagString: Instructions
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -799,7 +799,7 @@ GameObject:
   - 114: {fileID: 982110123}
   m_Layer: 5
   m_Name: Text
-  m_TagString: InstructionsCanvas
+  m_TagString: Instructions
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1557,7 +1557,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11416270, guid: f5bc2eead3e91bf419ff71ead4c46701, type: 2}
-        m_MethodName: showHowToPlay
+        m_MethodName: ShowCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
