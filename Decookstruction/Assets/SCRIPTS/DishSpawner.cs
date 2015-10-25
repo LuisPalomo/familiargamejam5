@@ -7,6 +7,7 @@ public class DishSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SoundManager.instance.PlayMusicGame ();
 		NewDish();
 		
 	}

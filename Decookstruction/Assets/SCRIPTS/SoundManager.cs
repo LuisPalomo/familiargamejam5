@@ -43,21 +43,16 @@ public class SoundManager : MonoBehaviour {
 
 	public void PlayMusicMenu()
 	{
+		musicGame.Stop ();
 		musicMenu.Play();
 	}
 
-	public void StopMusicMenu()
-	{
-		musicMenu.Stop();
-	}
+
 
 	public void PlayMusicGame()
 	{
-		musicGame.PlayDelayed(3F);
+		musicMenu.Stop();
+		musicGame.Play();
 	}
-	
-	public void StopMusicGame()
-	{
-		musicGame.Stop ();
-	}
+
 }

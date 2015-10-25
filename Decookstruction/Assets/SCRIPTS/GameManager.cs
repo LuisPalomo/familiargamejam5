@@ -75,18 +75,18 @@ public class GameManager : MonoBehaviour {
     public void changeScene(string scene)
     {
 		SoundManager.instance.PlaySingle (buttonSound);
-		SoundManager.instance.StopMusicMenu();
-		SoundManager.instance.StopMusicGame();
         Application.LoadLevel(scene);
     }
 
     public void showHowToPlay()
     {
+		SoundManager.instance.PlaySingle (buttonSound);
         this.SetGuiItemsEnabled("Instructions", true);
     }
 
     public void ShowCredits()
     {
+		SoundManager.instance.PlaySingle (buttonSound);
         this.SetGuiItemsEnabled("Credits", true);
     }
     
@@ -113,8 +113,14 @@ public class GameManager : MonoBehaviour {
     public void quitGame()
     {
 		SoundManager.instance.PlaySingle(exitSound);
-        Application.Quit();
+		Invoke ("closeGame", 2.5f);
     }
+
+	public void closeGame()
+	{
+		Debug.Log ("CLOSE");
+		Application.Quit();
+	}
 
     public void setBuckOpen(bool buck)
     {
