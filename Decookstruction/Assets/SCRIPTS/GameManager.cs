@@ -56,11 +56,33 @@ public class GameManager : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
     }
 
+    private void Update()
+    {
+        if (Input.anyKey)
+            if (Application.loadedLevelName == "MainMenu")
+                this.SetHowToPlayItemsEnabled(false);
+    }
+
     public void changeScene(string scene){
 		SoundManager.instance.PlaySingle (buttonSound);
-		SoundManager.instance.StopMusicMenu ();
-		SoundManager.instance.StopMusicGame ();
+		SoundManager.instance.StopMusicMenu();
+		SoundManager.instance.StopMusicGame();
         Application.LoadLevel(scene);
+    }
+
+    public void showHowToPlay()
+    {
+        this.SetHowToPlayItemsEnabled(true);
+    }
+
+    private void SetHowToPlayItemsEnabled(bool enabled)
+    {
+        GameObject[] howToCosas = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject howToItem in howToCosas)
+        {
+            if (howToItem.tag == "InstructionsCanvas")
+                howToItem.SetActive(enabled);
+        }
     }
 
     public void quitGame()

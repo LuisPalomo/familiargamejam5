@@ -43,12 +43,12 @@ public class SoundManager : MonoBehaviour {
 
 	public void PlayMusicMenu()
 	{
-		musicMenu.Play ();
+		musicMenu.Play();
 	}
 
 	public void StopMusicMenu()
 	{
-		musicMenu.Stop ();
+		musicMenu.Stop();
 	}
 
 	public void PlayMusicGame()
