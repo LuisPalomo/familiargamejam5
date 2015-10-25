@@ -6,7 +6,9 @@ TagManager:
   tags:
   - GameManager
   - Dish
-  - InstructionsCanvas
+  - Instructions
+  - QuitButton
+  - Credits
   layers:
   - Default
   - TransparentFX

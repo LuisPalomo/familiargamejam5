@@ -54,16 +54,26 @@ public class GameManager : MonoBehaviour {
 		
 		//Sets this to not be destroyed when reloading scene
 		DontDestroyOnLoad(gameObject);
+
+        #if UNITY_STANDALONE_WIN
+            this.ActivateQuitButton();
+        #endif
     }
 
     private void Update()
     {
         if (Input.anyKey)
+        {
             if (Application.loadedLevelName == "MainMenu")
-                this.SetHowToPlayItemsEnabled(false);
+            {
+                this.SetGuiItemsEnabled("Instructions", false);
+                this.SetGuiItemsEnabled("Credits", false);
+            }
+        }
     }
 
-    public void changeScene(string scene){
+    public void changeScene(string scene)
+    {
 		SoundManager.instance.PlaySingle (buttonSound);
 		SoundManager.instance.StopMusicMenu();
 		SoundManager.instance.StopMusicGame();
@@ -72,22 +82,37 @@ public class GameManager : MonoBehaviour {
 
     public void showHowToPlay()
     {
-        this.SetHowToPlayItemsEnabled(true);
+        this.SetGuiItemsEnabled("Instructions", true);
     }
 
-    private void SetHowToPlayItemsEnabled(bool enabled)
+    public void ShowCredits()
+    {
+        this.SetGuiItemsEnabled("Credits", true);
+    }
+    
+    private void SetGuiItemsEnabled(string tag, bool enabledState)
     {
         GameObject[] howToCosas = Resources.FindObjectsOfTypeAll<GameObject>();
         foreach (GameObject howToItem in howToCosas)
         {
-            if (howToItem.tag == "InstructionsCanvas")
-                howToItem.SetActive(enabled);
+            if (howToItem.tag == tag)
+                howToItem.SetActive(enabledState);
+        }
+    }
+
+    private void ActivateQuitButton()
+    {
+        GameObject[] objectList = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject item in objectList)
+        {
+            if (item.tag == "QuitButton")
+                item.SetActive(enabled);
         }
     }
 
     public void quitGame()
     {
-		SoundManager.instance.PlaySingle (exitSound);
+		SoundManager.instance.PlaySingle(exitSound);
         Application.Quit();
     }
 
@@ -119,7 +144,8 @@ public class GameManager : MonoBehaviour {
 
 	public void AddScore(int newScore)
 	{
-		if (newScore > 0) {
+		if (newScore > 0)
+        {
 			SoundManager.instance.PlaySingleDelay(cashSound, 0.5F);
 		} 
 		else 
@@ -129,4 +155,5 @@ public class GameManager : MonoBehaviour {
 		score += newScore;
         UpdateScore();
     }
+
 }
