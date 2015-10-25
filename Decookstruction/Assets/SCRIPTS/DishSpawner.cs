@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System;
 
 public class DishSpawner : MonoBehaviour {
 
@@ -33,10 +32,16 @@ public class DishSpawner : MonoBehaviour {
 		{
 			dish.GetComponent<Dish>().CalculateScore();
             dish.GetComponent<Animator>().Play("Destroy");
-            //yield WaitForSeconds (dish.GetComponent<Animator>().GetAnimatorTransitionInfo());
-            Destroy(dish);
-			
-			nDish = (GameObject) Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
+
+			StartCoroutine(DestroyOnAnimationEnd(dish, randomInt));
+            //Destroy(dish);
 		}
+	}
+
+	private IEnumerator DestroyOnAnimationEnd(GameObject go, int randomInt)
+	{
+		yield return new WaitForSeconds (1f);
+		Destroy (go);
+		GameObject nDish = (GameObject) Instantiate(dishes[randomInt], transform.position, Quaternion.identity);
 	}
 }
