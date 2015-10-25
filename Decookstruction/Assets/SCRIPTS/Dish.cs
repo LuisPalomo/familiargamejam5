@@ -58,8 +58,12 @@ public class Dish : MonoBehaviour {
     {
         int t= ingredient1.GetComponent<Ingredient>().numPieces;
 
-        t=(t * foodBucketScore1) / 100;
+        int percent1;
 
+        Debug.LogError(foodBucketScore1);
+        
+        percent1=(t * 100) /  foodBucketScore1;
+        
         return t;
     }
 
@@ -67,7 +71,7 @@ public class Dish : MonoBehaviour {
     {
         int t = ingredient2.GetComponent<Ingredient>().numPieces;
 
-        t = (t * foodBucketScore2) / 100;
+        t = (t * 100) / foodBucketScore2;
 
         return t;
     }
@@ -76,7 +80,7 @@ public class Dish : MonoBehaviour {
     {
         int t = ingredient3.GetComponent<Ingredient>().numPieces;
 
-        t = (t * foodBucketScore3) / 100;
+        t = (t * 100) / foodBucketScore2;
 
         return t;
     }

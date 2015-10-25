@@ -55,12 +55,15 @@ public class FoodBucket : MonoBehaviour {
             {
                 case 1:
                     kindPiece=dishAsso.GetComponent<Dish>().ingredient1.name;
+                    percentText.text = dishAsso.GetComponent<Dish>().perFood1()+" %";
                     break;
                 case 2:
                     kindPiece = dishAsso.GetComponent<Dish>().ingredient2.name;
+                    percentText.text = dishAsso.GetComponent<Dish>().perFood2() + " %";
                     break;
                 case 3:
                     kindPiece = dishAsso.GetComponent<Dish>().ingredient3.name;
+                    percentText.text = dishAsso.GetComponent<Dish>().perFood3() + " %";
                     break;
             }
 
