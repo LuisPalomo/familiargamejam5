@@ -1,18 +1,9 @@
 fileFormatVersion: 2
 guid: 9a05359322e29ea4eaa7f7a3a0220595
-timeCreated: 1445727821
+timeCreated: 1445711282
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Boton-Normal_0
-    21300002: Boton-Normal_1
-    21300004: Boton-Normal_2
-    21300006: Boton-Normal_3
-    21300008: Boton-Normal_4
-    21300010: Boton-Normal_5
-    21300012: Boton-Normal_6
-    21300014: Boton-Normal_7
-    21300016: Boton-Normal_8
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,103 +43,13 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 32, y: 32, z: 32, w: 32}
-  spritePixelsToUnits: 144
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Boton-Normal_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 85.3333282
-        width: 42.6666679
-        height: 42.6666718
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 85.3333282
-        width: 42.6666718
-        height: 42.6666718
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_2
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 85.3333282
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 43.3333321
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_4
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 43.3333321
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_5
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 43.3333321
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1.33333206
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_7
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 1.33333206
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Boton-Normal_8
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 1.33333206
-        width: 42.6666679
-        height: 42.6666679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
