@@ -4245,6 +4245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11414482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4258,6 +4259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11416820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4271,6 +4273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11416986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4284,6 +4287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11419292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4297,6 +4301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11433304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4310,6 +4315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11439242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4323,6 +4329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11442674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4336,6 +4343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11443448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4349,6 +4357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11443800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4362,6 +4371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11455158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4375,6 +4385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11457454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4400,6 +4411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11458224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4413,6 +4425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11462864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4438,6 +4451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11464748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4451,6 +4465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11467538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4464,6 +4479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11468666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4489,6 +4505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11475220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4502,6 +4519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11475492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4515,6 +4533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11478558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4528,6 +4547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11478620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4541,6 +4561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11480624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4554,6 +4575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11481358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4581,6 +4603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11487074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4594,6 +4617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11489810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4607,6 +4631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11490106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4620,6 +4645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11497708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4633,6 +4659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!114 &11499936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4646,6 +4673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   namePiece: 
   drag: 0
+  foodPick: {fileID: 8300000, guid: edd00566ae8dd0b4ebc590ff646af44d, type: 3}
 --- !u!212 &21200708
 SpriteRenderer:
   m_ObjectHideFlags: 1

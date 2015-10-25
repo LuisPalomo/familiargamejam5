@@ -14,6 +14,10 @@ public class FoodBucket : MonoBehaviour {
 
     public Text percentText;
 
+	public AudioClip drop;
+
+	public AudioClip dropError;
+
     string namePiece;
 
     GameObject dishAsso;
@@ -80,6 +84,8 @@ public class FoodBucket : MonoBehaviour {
         {
             Destroy(coll.gameObject);
 
+			SoundManager.instance.PlaySingle(drop);
+
             switch (nIngredient)
             {
                 case 1:
@@ -95,6 +101,7 @@ public class FoodBucket : MonoBehaviour {
         }
         else
         {
+			SoundManager.instance.PlaySingle(dropError);
             Destroy(coll.gameObject);
         }
        

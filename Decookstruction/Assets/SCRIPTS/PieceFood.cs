@@ -6,6 +6,8 @@ public class PieceFood : MonoBehaviour {
     public string namePiece;
 
     public bool drag;
+
+	public AudioClip foodPick;
     
 	// Use this for initialization
 	void Start () {
@@ -16,6 +18,11 @@ public class PieceFood : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
     
+	}
+
+	void OnMouseDown()
+	{
+		SoundManager.instance.PlaySingle (foodPick);
 	}
 
     void OnMouseDrag()
