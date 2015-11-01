@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
+using UnityEngine;
 
 public class TitleWiggle : MonoBehaviour
 {
@@ -26,7 +26,7 @@ public class TitleWiggle : MonoBehaviour
 
     private void Wiggle()
     {
-        float wiggleFactor = Mathf.Abs(0.5f - this.wiggleTime) * 2.0f;
+        //float wiggleFactor = Mathf.Abs(0.5f - this.wiggleTime) * 2.0f;
         this.transform.localRotation = Quaternion.AngleAxis(Mathf.Sin(Time.time) * 2.0f, Vector3.forward);
         this.transform.localScale = new Vector3(1.0f + (Mathf.Sin(Time.time * 10.0f) * 0.01f), 1.0f + (Mathf.Sin(Time.time * 20.0f) * 0.01f), 1.0f);
     }

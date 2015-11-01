@@ -1,17 +1,20 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
+using UnityEngine;
 
-public class MainMenu : MonoBehaviour {
+public class MainMenu : MonoBehaviour
+{
+    public void StartGame()
+    {
+        Application.LoadLevel("GameScene");
+    }
 
-	public void StartGame(){
-		Application.LoadLevel("GameScene");
-	}
+    public void HowToPlay()
+    {
+        //Time.timeScale = 0.5;
+    }
 
-	public void HowToPlay(){
-		//Time.timeScale = 0.5;
-	}
-
-	public void Quit(){
-		Application.Quit();
-	}
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
