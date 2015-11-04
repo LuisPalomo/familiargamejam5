@@ -8,15 +8,15 @@ public class DishSpawner : MonoBehaviour {
 	private float timeToNewDish;
 
 	// Use this for initialization
-	void Start () {
-		SoundManager.instance.PlayMusicGame ();
-		NewDish();
-		
+	void Start ()
+    {
+		//SoundManager.instance.PlayMusicGame ();
+		this.NewDish();
 	}
 	
     void Update()
     {
-        if(Input.GetButtonDown("Jump") && GameManager.instance.Block == false){
+        if(Input.GetButtonDown("Jump") && GameManager.Instance.Block == false){
 
             GameObject.Find("Timbre").GetComponent<TimbreController>().GenerateSound();
 

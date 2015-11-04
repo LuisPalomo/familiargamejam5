@@ -1,63 +1,63 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour {
-
-	public static GameManager instance = null;
+public class GameManager : MonoBehaviour
+{
+	private static GameManager instance = null;
 
 	private int score;
 
-    private bool buckOpen=false;
+    private bool buckOpen = false;
 
-    private bool block=false;
+    private bool block = false;
 
     private string buttonBucket;
 
+    // Sonidos del juego
 	public AudioClip buttonSound;
+    public AudioClip cashSound;
+    public AudioClip exitSound;
+    public AudioClip musicSound;
 
-	public AudioClip exitSound;
+    // Controlador de menú principal
+    private MainMenuController mainMenuController;
 
-	public AudioClip musicSound;
-
-	public AudioClip cashSound;
-
-    private GameManager() { }
+    private GameManager()
+    {
+    }
 
     public static GameManager Instance
     {
         get
         {
-            if (instance == null)
-            {
-                DontDestroyOnLoad(instance);
-                instance = new GameManager();
-            }
+            //if (instance == null)
+            //{
+            //    DontDestroyOnLoad(instance);
+            //    instance = new GameManager();
+            //}
 
-            return instance;
+            return GameManager.instance;
         }
     }
 
    
 
-    //Awake is always called before any Start functions
+    // Métodos de Unity
     void Awake()
     {
         Debug.Log("Inicia");
-		//Check if instance already exists
-		if (instance == null)
-			
-			//if not, set instance to this
-			instance = this;
+
+        if (GameManager.instance == null)
+            GameManager.instance = this;
+        else if (GameManager.instance != this)
+			GameObject.Destroy(this.gameObject);    
 		
-		//If instance already exists and it's not this:
-		else if (instance != this)
-			
-			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
-			Destroy(gameObject);    
-		
-		//Sets this to not be destroyed when reloading scene
-		DontDestroyOnLoad(gameObject);
+		// No destruir con los cambios de escena
+		GameObject.DontDestroyOnLoad(this.gameObject);
+
+        this.mainMenuController = this.FindMainMenuController();
 
         #if UNITY_STANDALONE_WIN
             this.ActivateQuitButton();
@@ -70,12 +70,25 @@ public class GameManager : MonoBehaviour {
         {
             if (Application.loadedLevelName == "MainMenu")
             {
-                this.SetGuiItemsEnabled("Instructions", false);
-                this.SetGuiItemsEnabled("Credits", false);
+                //this.SetGuiItemsEnabled("Instructions", false);
+                //this.SetGuiItemsEnabled("Credits", false);
+                GameManager.Instance.mainMenuController.ReturnToMain();
             }
         }
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        if (Application.loadedLevelName == "MainMenu")
+        {
+            GameManager.Instance.mainMenuController = this.FindMainMenuController();
+            SoundManager.instance.PlayMusicMenu();
+        }
+        else
+            SoundManager.instance.PlayMusicGame();
+    }
+
+    // Métodos auxiliares
     public void changeScene(string scene)
     {
         Debug.Log("CambioScena");
@@ -86,18 +99,15 @@ public class GameManager : MonoBehaviour {
         Application.LoadLevel(scene);
     }
 
-    public void showHowToPlay()
+    private MainMenuController FindMainMenuController()
     {
-		SoundManager.instance.PlaySingle (buttonSound);
-        this.SetGuiItemsEnabled("Instructions", true);
+        GameObject canvas = GameObject.FindGameObjectWithTag("MainMenuCanvas");
+        if (canvas != null)
+            return canvas.GetComponent<MainMenuController>();
+        
+        return null;
     }
 
-    public void ShowCredits()
-    {
-		SoundManager.instance.PlaySingle (buttonSound);
-        this.SetGuiItemsEnabled("Credits", true);
-    }
-    
     public void SetGuiItemsEnabled(string tag, bool enabledState)
     {
         GameObject[] howToCosas = Resources.FindObjectsOfTypeAll<GameObject>();
@@ -117,18 +127,6 @@ public class GameManager : MonoBehaviour {
                 item.SetActive(enabled);
         }
     }
-
-    public void quitGame()
-    {
-		SoundManager.instance.PlaySingle(exitSound);
-		Invoke ("closeGame", 2.5f);
-    }
-
-	public void closeGame()
-	{
-		Debug.Log ("CLOSE");
-		Application.Quit();
-	}
 
     public void setBuckOpen(bool buck)
     {
@@ -192,5 +190,32 @@ public class GameManager : MonoBehaviour {
         scoreTextGO.GetComponent<Text>().text = score + " $";
     }
 
+    // Eventos del menú principal del juego
+    public void ShowInstructions()
+    {
+        SoundManager.instance.PlaySingle(buttonSound);
+        //this.SetGuiItemsEnabled("Instructions", true);
+        GameManager.Instance.mainMenuController.ShowInstructions();
+    }
+
+    public void ShowOptions()
+    {
+        SoundManager.instance.PlaySingle(buttonSound);
+        //this.SetGuiItemsEnabled("Instructions", true);
+        GameManager.Instance.mainMenuController.ShowOptions();
+    }
+
+    public void ShowCredits()
+    {
+        SoundManager.instance.PlaySingle(buttonSound);
+        //this.SetGuiItemsEnabled("Credits", true);
+        GameManager.Instance.mainMenuController.ShowCredits();
+    }
+
+    public void QuitGame()
+    {
+        SoundManager.instance.PlaySingle(exitSound);
+        Invoke("closeGame", 2.5f);
+    }
 
 }

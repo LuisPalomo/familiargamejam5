@@ -8,8 +8,9 @@ TagManager:
   - Dish
   - Instructions
   - QuitButton
-  - Credits
+  - MainMenuCanvas
   - EndGame
+  - FadingBox
   layers:
   - Default
   - TransparentFX
