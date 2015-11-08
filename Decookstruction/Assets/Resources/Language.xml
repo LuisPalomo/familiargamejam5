@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gamelocalization>
+  <string id="button-startgame">
+    <item lang="en">Start game</item>
+    <item lang="es">Jugar</item>
+  </string>
+  <string id="button-options">
+    <item lang="en">Options</item>
+    <item lang="es">Opciones</item>
+  </string>
+  <string id="button-instructions">
+    <item lang="en">How to play</item>
+    <item lang="es">Cómo jugar</item>
+  </string>
+  <string id="button-credits">
+    <item lang="en">Credits</item>
+    <item lang="es">Créditos</item>
+  </string>
+  <string id="button-quit">
+    <item lang="en">Quit</item>
+    <item lang="es">Salir</item>
+  </string>
+</gamelocalization>
